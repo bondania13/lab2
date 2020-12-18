@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/purple_200"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="180dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Оберіть регіон країни"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/convert_eu_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="30dp"
+        android:background="#FBFBFB"
+        android:onClick="openEUconverter"
+        android:text="Європа"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:backgroundTint="#FFFFFF" />
+
+
+    <Button
+        android:id="@+id/convert_am_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/convert_eu_button"
+        android:layout_marginTop="5dp"
+        android:background="#FBFBFB"
+        android:onClick="openAMconverter"
+        android:text="Америка"
+        android:textColor="#020000"
+        android:textSize="16sp"
+        app:backgroundTint="#FFFFFF" />
+
+</RelativeLayout>

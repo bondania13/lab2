@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#7ED4DF"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <TextView
+        android:id="@+id/textVieweu"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@color/white"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Конвертер валют. Європа"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView2eu"
+        android:layout_width="270dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="20dp"
+        android:text="Оберіть валюту, з якої конвертуємо"
+        android:textSize="15sp" />
+
+    <Spinner
+        android:id="@+id/currencies_from_spinner_eu"
+        android:layout_width="239dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white" />
+
+    <TextView
+        android:id="@+id/textView3eu"
+        android:layout_width="270dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="20dp"
+        android:text="Оберіть валюту, на яку конвертуємо"
+        android:textSize="15sp" />
+
+    <Spinner
+        android:id="@+id/currencies_to_spinner_eu"
+        android:layout_width="239dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white" />
+
+    <TextView
+        android:id="@+id/textView5eu"
+        android:layout_width="124dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Введіть суму:"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/amount_input_eu"
+        android:layout_width="158dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/convert_eu_button"
+        android:gravity="center"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="60dp"
+        android:onClick="onOperationClick_eu"
+        android:text="Конвертувати!"
+        android:textSize="18sp"  />
+
+    <TextView
+        android:id="@+id/textView6eu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Результат:"
+        android:textSize="16sp" />
+
+
+    <EditText
+        android:id="@+id/result_field_eu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/res_text_eu"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_x="43dp"
+        android:layout_y="506dp"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>
